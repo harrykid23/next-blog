@@ -1,26 +1,16 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@300;400;600&display=swap");
 * {
-  box-sizing: border-box;
+  font-family: "Hind Vadodara", sans-serif;
+  font-weight: 400;
+  color: black;
 }
 
 @media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
+  .next-error-h1 {
+    border-right: 1px solid rgba(0, 0, 0, 0.3) !important;
   }
 }
